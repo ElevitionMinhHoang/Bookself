@@ -17,3 +17,103 @@ body {
 }
 
 /* Add custom styles here if needed */
+:root {
+    --primary: #2b4a3e;
+    --accent: #F4A261;
+    --background-light: #F8FAF8;
+    --background-dark: #161c1a;
+    --card-light: #ffffff;
+    --card-dark: #202825;
+    --text-light: #1E1E1E;
+    --text-dark: #F8FAF8;
+    --text-subtle-light: #6b7280;
+    --text-subtle-dark: #9ca3af;
+    --border-light: #e5e7eb;
+    --border-dark: #374151;
+}
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+.dark body {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+/* Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1e352a;
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    color: var(--primary);
+}
+
+.btn-accent:hover {
+    opacity: 0.9;
+}
+
+/* Form Styles */
+.form-input, .form-textarea {
+    border: 1px solid var(--border-light);
+    background-color: var(--background-light);
+    color: var(--text-light);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(43, 74, 62, 0.2);
+}
+
+.dark .form-input, .dark .form-textarea {
+    border-color: var(--border-dark);
+    background-color: var(--card-dark);
+    color: var(--text-dark);
+}
+
+.dark .form-input:focus, .dark .form-textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(244, 162, 97, 0.2);
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--card-light);
+    border: 1px solid var(--border-light);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+.card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+
+.dark .card {
+    background-color: var(--card-dark);
+    border-color: var(--border-dark);
+}
