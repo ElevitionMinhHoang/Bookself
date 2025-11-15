@@ -1,0 +1,19 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-smoothing: grayscale;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+:root {
+  --primary: #2b4a3e;
+  --accent": #F4A261;
+  --background-light: #F8FAF8;
+  --background-dark: #161c1a;
+  --text-light: #1E1E1E;
+  --text-dark: #F8FAF8;
+}
+
+/* Add custom styles here if needed */

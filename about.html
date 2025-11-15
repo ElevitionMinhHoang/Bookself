@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Về BookNest - Câu chuyện của chúng tôi</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <!-- TopNavBar -->
+        <header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-primary/10">
+            <div class="container mx-auto px-4">
+                <div class="flex h-16 items-center justify-between">
+                    <div class="flex items-center gap-4">
+                         <a href="index.html" class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-primary text-3xl">import_contacts</span>
+                            <h2 class="text-xl font-bold tracking-tight text-primary">BookNest</h2>
+                        </a>
+                    </div>
+                    <nav class="hidden items-center gap-8 md:flex">
+                        <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Trang chủ</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors" href="products.html">Cửa hàng</a>
+                        <a class="text-sm font-bold text-primary" href="about.html">Về chúng tôi</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Liên hệ</a>
+                    </nav>
+                    <div class="flex items-center gap-3">
+                        <a href="login.html" class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+                            <span class="material-symbols-outlined text-xl">person</span>
+                        </a>
+                        <a href="checkout.html" class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+                            <span class="material-symbols-outlined text-xl">shopping_cart</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow">
+            <!-- HeroSection -->
+            <section class="relative flex min-h-[50vh] w-full items-center justify-center py-16 md:py-24">
+                <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXgW7fRfFAQ08LxGDwUhqbBR2UwvmQ3mata87FKWP5UoUy5Hyz4_Z0J5NEAYHz85eOqY4pjqA8uHCcizV4djIKVsBalEsk8ZDTulWUCAO5JIN0Ian3nLZamAito708jRJexm2drDvNpF09nYIVdxRE08y_pU_nx47B48oDq3WKOdOIBKHQ_KlXudmyAkcUiARvl_84brliIBV85fWvVnBdkjg1hfbfjiGh_5xvH3Y7erkg41iLfmo84XdtA9-W43rG6Rwzq1FeQ2G6');"></div>
+                <div class="absolute inset-0 bg-black/50 z-10"></div>
+                <div class="relative z-20 container mx-auto px-4 text-center">
+                    <div class="max-w-2xl mx-auto bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm p-8 md:p-12 rounded-xl shadow-lg">
+                        <h1 class="text-4xl font-black leading-tight tracking-tighter text-primary md:text-5xl">Câu chuyện của chúng tôi</h1>
+                        <p class="mt-4 text-base font-normal leading-normal text-text-light dark:text-text-dark/90 md:text-lg">BookNest được thành lập từ niềm đam mê vô tận với sách và mong muốn lan tỏa văn hóa đọc đến mọi người, tạo ra một không gian ấm cúng cho những tâm hồn yêu sách.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

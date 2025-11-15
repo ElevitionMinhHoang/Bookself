@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>BookNest - Đăng nhập hoặc Đăng ký</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+    <div class="relative flex min-h-screen w-full flex-col items-center justify-center overflow-x-hidden p-4 group/design-root">
+        <div class="flex w-full max-w-md flex-col items-center gap-6">
+            <!-- Logo -->
+            <a href="index.html" class="flex flex-col items-center">
+                <h1 class="text-4xl font-bold tracking-tight text-primary dark:text-accent">BookNest</h1>
+            </a>
+            <!-- Main Card -->
+            <div class="w-full rounded-xl bg-white dark:bg-background-dark/50 p-8 shadow-[0_4px_24px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_24px_rgba(0,0,0,0.2)] border border-border-light/50 dark:border-border-dark">
+                <!-- Welcome Text -->
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold tracking-tight text-text-light dark:text-text-dark">Chào mừng trở lại!</h2>
+                    <p class="mt-1 text-sm text-text-light/70 dark:text-text-dark/70">Vui lòng đăng nhập để tiếp tục</p>
+                </div>
+                <!-- Login Form -->
+                <form id="login-form" class="flex flex-col gap-4 mt-6">
+                    <!-- Email Field -->
+                    <label class="flex flex-col">
+                        <p class="pb-2 text-sm font-medium text-text-light dark:text-text-dark">Email</p>
+                        <input class="form-input h-12 w-full flex-1 resize-none overflow-hidden rounded-lg border border-border-light bg-background-light p-3 text-sm font-normal text-text-light placeholder:text-text-light/50 focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/20 dark:border-border-dark dark:bg-background-dark dark:text-text-dark dark:placeholder:text-text-dark/50 dark:focus:border-accent" placeholder="Nhập email của bạn" type="email" value="user@email.com" />
+                    </label>
+                    <!-- Password Field -->
+                    <label class="flex flex-col">
+                        <div class="flex items-baseline justify-between">
+                            <p class="pb-2 text-sm font-medium text-text-light dark:text-text-dark">Mật khẩu</p>
+                            <a class="text-xs font-medium text-accent hover:underline" href="#">Quên mật khẩu?</a>
+                        </div>
+                        <div class="relative flex w-full flex-1 items-stretch">
+                            <input class="form-input h-12 w-full flex-1 resize-none overflow-hidden rounded-lg border border-border-light bg-background-light p-3 pr-10 text-sm font-normal text-text-light placeholder:text-text-light/50 focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/20 dark:border-border-dark dark:bg-background-dark dark:text-text-dark dark:placeholder:text-text-dark/50 dark:focus:border-accent" placeholder="Nhập mật khẩu của bạn" type="password" value="password" />
+                            <div class="absolute right-0 top-0 flex h-full w-10 items-center justify-center text-text-light/60 dark:text-text-dark/60">
+                                <span class="material-symbols-outlined text-xl cursor-pointer">visibility_off</span>
+                            </div>
+                        </div>
+                    </label>
+                    <!-- CTA Button -->
+                    <button type="submit" class="flex h-12 w-full items-center justify-center rounded-lg bg-primary px-4 py-2 text-base font-semibold text-white transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 dark:bg-accent dark:hover:bg-accent/90 dark:focus:ring-accent/50 dark:text-primary">
+                        Đăng nhập
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>

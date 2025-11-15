@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tài khoản của bạn - BookNest</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-display bg-background text-text-dark">
+    <div class="relative flex h-auto min-h-screen w-full flex-col">
+        <!-- TopNavBar -->
+        <header class="sticky top-0 z-50 w-full border-b border-border-light bg-background/80 backdrop-blur-sm">
+            <div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-8 py-3">
+                <div class="flex items-center gap-8">
+                    <a href="index.html" class="flex items-center gap-3 text-primary">
+                        <span class="material-symbols-outlined text-3xl">import_contacts</span>
+                        <h2 class="text-primary text-xl font-bold leading-tight">BookNest</h2>
+                    </a>
+                </div>
+                <nav class="hidden md:flex items-center gap-9">
+                    <a class="text-text-dark text-sm font-medium leading-normal hover:text-primary transition-colors" href="index.html">Trang chủ</a>
+                    <a class="text-text-dark text-sm font-medium leading-normal hover:text-primary transition-colors" href="products.html">Sản phẩm</a>
+                    <a class="text-text-dark text-sm font-medium leading-normal hover:text-primary transition-colors" href="about.html">Giới thiệu</a>
+                    <a class="text-text-dark text-sm font-medium leading-normal hover:text-primary transition-colors" href="contact.html">Liên hệ</a>
+                </nav>
+                <div class="flex flex-1 justify-end items-center gap-4">
+                    <button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-transparent hover:bg-primary/10 text-text-dark hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-2xl">search</span>
+                    </button>
+                    <a href="account.html" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdE49OXSJ3_RUSPFVOGWhGvs6nCh26oKUTcvRs_wSBg3Tm_NhIRThQgLTthFQu5_RBejCzlHyi_PRCXhezKpahVnMD9HaytfsieMTMkI1SvXLH3FLuyZDolm5q01RkBueXcclINRS_3axOHCDBKzLUCP2fpPKQ9_3TqrpBzLvv1JBcqLS7r83CMvbW_1-207Ig9MsEBv6gRKjimaN9vxW387FGOPimQv3hjPgs-AbzZUCmO9YxnZy-A-LWigLdNsyLt8Ko9PxG6OdB");'></a>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main class="container mx-auto flex-1 px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+            <!-- PageHeading -->
+            <div class="mb-8">
+                <h1 class="text-text-dark text-4xl font-black leading-tight tracking-[-0.033em]">Tài khoản của bạn</h1>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
+                <!-- SideNavBar -->
+                <aside class="md:col-span-4 lg:col-span-3">
+                    <div class="flex flex-col gap-2 bg-white rounded-xl border border-border-light p-4 sticky top-24">
+                        <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary transition-colors" href="#">
+                            <span class="material-symbols-outlined">person</span>
+                            <p class="text-sm font-medium leading-normal">Thông tin cá nhân</p>
+                        </a>
+                        <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-dark hover:bg-primary/10 hover:text-primary transition-colors" href="#">
+                            <span class="material-symbols-outlined">receipt_long</span>
+                            <p class="text-sm font-medium leading-normal">Lịch sử đơn hàng</p>
+                        </a>
+                        <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-dark hover:bg-primary/10 hover:text-primary transition-colors" href="#">
+                            <span class="material-symbols-outlined">bookmark</span>
+                            <p class="text-sm font-medium leading-normal">Sách đã lưu</p>
+                        </a>
+                        <div class="border-t border-border-light my-2"></div>
+                        <a id="logout-btn" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-dark hover:bg-primary/10 hover:text-primary transition-colors" href="#">
+                            <span class="material-symbols-outlined">logout</span>
+                            <p class="text-sm font-medium leading-normal">Đăng xuất</p>
+                        </a>
+                    </div>
+                </aside>
+                <!-- Content Area -->
+                <div class="md:col-span-8 lg:col-span-9 flex flex-col gap-12">
+                    <!-- Section 1: Personal Information -->
+                    <section id="personal-info">
+                        <div class="flex justify-between items-center mb-4">
+                            <h2 class="text-primary text-2xl font-bold leading-tight tracking-[-0.015em]">Thông tin cá nhân</h2>
+                        </div>
+                        <div class="bg-white rounded-xl border border-border-light p-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div class="flex flex-col">
+                                    <p class="text-text-dark text-sm font-medium leading-normal pb-2">Họ và tên</p>
+                                    <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-dark bg-background border border-border-light focus:border-primary focus:ring-2 focus:ring-primary/20 h-12 p-3 text-base font-normal leading-normal" disabled="" value="Nguyễn Văn An" />
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class="text-text-dark text-sm font-medium leading-normal pb-2">Email</p>
+                                    <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-dark bg-background border border-border-light focus:border-primary focus:ring-2 focus:ring-primary/20 h-12 p-3 text-base font-normal leading-normal" disabled="" value="user@email.com" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>
