@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+    loadNavbar();
+    loadFooter();
     const featuredBooksContainer = document.getElementById("featured-books-container");
     const promoBooksContainer = document.getElementById("promo-books-container");
 
@@ -57,6 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    renderFeaturedBooks();
-    renderPromoBooks();
+    // renderFeaturedBooks();
+    // renderPromoBooks();
 });

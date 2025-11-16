@@ -72,49 +72,57 @@ function updateCartCount() {
 }
 
 const footerHTML = `
-<footer class="w-full bg-primary text-white mt-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div class="md:col-span-1">
-                <div class="flex items-center gap-3 text-white mb-4">
-                    <span class="material-symbols-outlined text-3xl">import_contacts</span>
-                    <h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">BookNest</h2>
-                </div>
-                <p class="text-sm text-white/80">Nơi tri thức bắt đầu.</p>
-            </div>
-            <div>
-                <h3 class="font-bold tracking-wider uppercase mb-4">Về BookNest</h3>
-                <ul class="space-y-2 text-sm text-white/80">
-                    <li><a class="hover:text-white transition-colors" href="about.html">Giới thiệu</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Tuyển dụng</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Điều khoản</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="font-bold tracking-wider uppercase mb-4">Hỗ trợ khách hàng</h3>
-                <ul class="space-y-2 text-sm text-white/80">
-                    <li><a class="hover:text-white transition-colors" href="#">Câu hỏi thường gặp</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Chính sách đổi trả</a></li>
-                    <li><a class="hover:text-white transition-colors" href="contact.html">Liên hệ</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="font-bold tracking-wider uppercase mb-4">Kết nối với chúng tôi</h3>
-                <div class="flex space-x-4">
-                    <a class="text-white/80 hover:text-white transition-colors" href="#">
-                        <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
-                    </a>
-                    <a class="text-white/80 hover:text-white transition-colors" href="#">
-                        <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
-                    </a>
-                    <a class="text-white/80 hover:text-white transition-colors" href="#">
-                        <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.011 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.011 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.011-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.011-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.01 10.147 2 12.315 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm6.406-11.845a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" fill-rule="evenodd"></path></svg>
-                    </a>
-                </div>
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: About -->
+        <div class="footer-column">
+            <h3 class="text-lg font-bold">BookNest</h3>
+            <p>BookNest là nơi bạn có thể tìm thấy những cuốn sách hay nhất, từ kinh điển đến hiện đại, giúp bạn mở rộng tri thức và khám phá những thế giới mới.</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Liên kết nhanh</h3>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sách</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-column">
+            <h3>Thông tin liên hệ</h3>
+            <ul>
+                <li>Địa chỉ: 123 Đường Sách, TP. HCM</li>
+                <li>Điện thoại: (123) 456-7890</li>
+                <li>Email: support@booknest.vn</li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Social Media -->
+        <div class="footer-column">
+            <h3>Mạng xã hội</h3>
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.442c-3.2 0-3.57.01-4.823.068-2.922.133-4.131 1.331-4.264 4.264-.058 1.253-.068 1.623-.068 4.823s.01 3.57.068 4.823c.133 2.933 1.342 4.131 4.264 4.264 1.253.058 1.623.068 4.823.068s3.57-.01 4.823-.068c2.922-.133 4.131-1.331 4.264-4.264.058-1.253.068-1.623.068-4.823s-.01-3.57-.068-4.823c-.133-2.933-1.342-4.131-4.264-4.264C15.57 3.615 15.2 3.605 12 3.605zM12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zm0 6a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5zm4.884-7.442a.938.938 0 100-1.876.938.938 0 000 1.876z"/></svg>
+                </a>
+                <a href="#" aria-label="TikTok">
+                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-2.43.03-4.83-.95-6.43-2.88-1.59-1.92-2.31-4.36-2.02-6.84.29-2.48 1.63-4.65 3.58-6.12 2.21-1.72 4.8-2.5 7.37-2.42v4.52c-.9-.02-1.79-.04-2.69-.04-1.47 0-2.85.39-4.1 1.15-.31.18-.58.41-.83.67-.35.35-.62.77-.81 1.22-.19.45-.31.93-.36 1.43-.05.5-.02 1.01.06 1.51.08.49.23.97.46 1.42.22.45.5.86.84 1.2.34.34.74.61 1.18.79.44.18.91.28 1.39.31.48.02.97-.04 1.44-.13.47-.09.93-.24 1.37-.46.43-.22.84-.5 1.2-.82.36-.32.68-.69.94-1.1.26-.41.46-.85.59-1.32.13-.47.19-.96.18-1.45v-5.18c.11-.01.21-.02.32-.02z"/></svg>
+                </a>
             </div>
         </div>
-        <div class="mt-8 border-t border-white/20 pt-8 text-center text-sm text-white/60">
-            <p>© 2024 BookNest. All rights reserved.</p>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 BookNest. All rights reserved.</p>
+        <div class="footer-bottom-links">
+            <a href="privacy-policy.html">Chính sách bảo mật</a>
+            <a href="return-policy.html">Chính sách đổi trả</a>
+            <a href="terms.html">Điều khoản sử dụng</a>
         </div>
     </div>
 </footer>
@@ -168,9 +176,3 @@ function showModal(message, type = 'success') {
         }
     });
 }
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    loadNavbar();
-    loadFooter();
-});

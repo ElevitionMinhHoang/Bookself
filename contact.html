@@ -98,26 +98,14 @@
         </main>
 
         <!-- Footer Placeholder -->
-        <div id="footer-placeholder"></div>
+        <footer id="footer-placeholder"></footer>
     </div>
 
     <!-- Modal Placeholder -->
     <div id="modal-placeholder"></div>
 
     <script src="js/utils.js"></script>
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const name = event.target.querySelector('input[type="text"]').value;
-            const email = event.target.querySelector('input[type="email"]').value;
-            const message = event.target.querySelector('textarea').value;
-            if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
-                showModal('Vui lòng điền đầy đủ thông tin vào các trường bắt buộc.', 'error');
-                return;
-            }
-            showModal('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm.');
-            event.target.reset();
-        });
-    </script>
+    <script src="js/main.js"></script>
+    <script src="js/contact-page.js"></script>
 </body>
 </html>

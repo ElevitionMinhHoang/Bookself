@@ -117,3 +117,5 @@ body {
     background-color: var(--card-dark);
     border-color: var(--border-dark);
 }
+
+@import url('footer.css');
